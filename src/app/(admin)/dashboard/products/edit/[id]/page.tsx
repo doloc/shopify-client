@@ -2,9 +2,9 @@
 import { useState } from "react";
 import { FiUpload, FiX } from "react-icons/fi";
 // @ts-ignore
-import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
-import ReactQuill from "react-quill";
-import "react-quill/dist/quill.snow.css";
+// import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
+// import ReactQuill from "react-quill";
+// import "react-quill/dist/quill.snow.css";
 
 type ProductFormType = {
     name: string;
@@ -173,7 +173,7 @@ const ProductEdit = () => {
                             <span className="text-sm text-gray-500">Click or drag images to upload</span>
                             </label>
                         </div>
-                        <DragDropContext onDragEnd={handleDragEnd}>
+                        {/* <DragDropContext onDragEnd={handleDragEnd}>
                             <Droppable droppableId="images" direction="horizontal">
                             {(provided: any) => (
                                 <div
@@ -213,7 +213,7 @@ const ProductEdit = () => {
                                 </div>
                             )}
                             </Droppable>
-                        </DragDropContext>
+                        </DragDropContext> */}
                     </div>
                     <div>
                         <label className="block text-sm font-medium mb-2">Description</label>
