@@ -1,8 +1,12 @@
+import { comment } from "postcss";
+import { title } from "process";
+
 type Language = "en" | "vi";
 type Translations = {
     [key: string]: {
         categories: string[];
         searchPlaceholder: string;
+        testimonials: string;
         navigation: {
             products: string;
             news: string;
@@ -77,7 +81,22 @@ type Translations = {
             tax: string;
             grandTotal: string;
 
-        }
+        };
+        reviews: {
+            title: string;
+            review: string;
+            rating: string;
+            comment: string;
+            submit: string;
+        };
+        contacts: {
+            title: string;
+            title2: string;
+            support: string;
+            feedback: string;
+            address: string;
+            time: string;
+        };
     };
 };
 
@@ -248,6 +267,50 @@ const checkout = {
     }
 };
 
+const contacts = {
+    en: {
+        contacts: {
+            title: "Contact Us",
+            title2: "Contact",
+            support: "Support",
+            feedback: "Feedback",
+            address: "Adress",
+            time: "Working Time"
+        }
+    },
+    vi: {
+        contacts: {
+            title: "Liên Hệ Chúng Tôi",
+            title2: "Liên Hệ",
+            support: "Hỗ trợ",
+            feedback: "Góp ý",
+            address: "Địa chỉ",
+            time: "Giờ làm việc"
+        }
+    }
+}
+
+const reviews = {
+    en: {
+        reviews: {
+            title: "Customer Reviews",
+            review: "Write a Review",
+            rating: "Rating",
+            comment: "Comment",
+            submit: "Submit Review"
+        }
+    },
+    vi: {
+        reviews: {
+            title: "Đánh giá của khách hàng",
+            review: "Nhận xét",
+            rating: "Đánh giá",
+            comment: "Bình luận",
+            submit: "Đăng nhận xét"
+        }
+    }
+}
+
 export const translations: Translations = {
     en: {
         categories: [
@@ -259,6 +322,7 @@ export const translations: Translations = {
             "Outdoor"
         ],
         searchPlaceholder: "Search ...",
+        testimonials: "What our customers say about us?",
         navigation: {
             products: "Products",
             news: "News",
@@ -280,7 +344,9 @@ export const translations: Translations = {
         ...hero.en,
         ...container.en,
         ...news.en,
-        ...checkout.en
+        ...checkout.en,
+        ...reviews.en,
+        ...contacts.en
     },
     vi: {
         categories: [
@@ -292,6 +358,7 @@ export const translations: Translations = {
             "Ngoài Trời"
         ],
         searchPlaceholder: "Tìm kiếm ...",
+        testimonials: "Khách hàng nói gì về chúng tôi?",
         navigation: {
             products: "Sản phẩm",
             news: "Tin tức",
@@ -313,6 +380,8 @@ export const translations: Translations = {
         ...hero.vi,
         ...container.vi,
         ...news.vi,
-        ...checkout.vi
+        ...checkout.vi,
+        ...reviews.vi,
+        ...contacts.vi
     }
 }

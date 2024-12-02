@@ -60,10 +60,10 @@ const Header = () => {
                     <button className="text-gray-600 hover:text-gray-900 font-medium" onClick={() => router.push('/news')}>
                         {translations[language].navigation.news}
                     </button>
-                    <button className="text-gray-600 hover:text-gray-900 font-medium">
+                    <button className="text-gray-600 hover:text-gray-900 font-medium" onClick={() => router.push('/about-us')}>
                         {translations[language].navigation.aboutUs}
                     </button>
-                    <button className="text-gray-600 hover:text-gray-900 font-medium">
+                    <button className="text-gray-600 hover:text-gray-900 font-medium" onClick={() => router.push('/contact')}>
                         {translations[language].navigation.contact}
                     </button>
                     </div>
