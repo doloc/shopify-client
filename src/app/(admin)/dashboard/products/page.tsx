@@ -3,7 +3,7 @@ import { useState } from "react";
 import { FiEdit2, FiPlusCircle, FiTrash2 } from "react-icons/fi"
 
 const Products = () => {
-    const [language, setLanguage] = useState<keyof typeof translations>("en");
+  const [language] = useState<keyof typeof translations>("en");
     const [statusFilter, setStatusFilter] = useState("all");
     const [categoryFilter, setCategoryFilter] = useState("all");
     const translations = {

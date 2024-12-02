@@ -3,7 +3,7 @@ import { useState } from "react";
 import { FiEdit2, FiPlusCircle, FiTrash2 } from "react-icons/fi";
 
 const Categories = () => {
-    const [language, setLanguage] = useState<keyof typeof translations>("en");
+    const [language] = useState<keyof typeof translations>("en");
     const [isEditModalOpen, setIsEditModalOpen] = useState(false);
     const [editCategory, setEditCategory] = useState<any>(null);
     const translations = {

@@ -3,7 +3,7 @@ import { useState } from "react";
 import { FiEdit2, FiPlusCircle, FiTrash2 } from "react-icons/fi";
 
 const Users = () => {
-    const [language, setLanguage] = useState<keyof typeof translations>("en");
+    const [language] = useState<keyof typeof translations>("en");
     const translations = {
         en: {
           dashboard: "Dashboard",

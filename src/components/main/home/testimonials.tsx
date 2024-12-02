@@ -19,20 +19,20 @@ const Testimonials = () => {
                 <div className="flex flex-wrap justify-center gap-8">
                     <div className="p-6 bg-white/80 text-black rounded-lg shadow-md max-w-xs">
                         <p className="text-lg font-medium">
-                        "Sản phẩm rất đẹp và chất lượng, tôi luôn nhận được nhiều lời khen
-                        từ bạn bè."
+                        &quot;Sản phẩm rất đẹp và chất lượng, tôi luôn nhận được nhiều lời khen
+                        từ bạn bè.&quot;
                         </p>
                         <div className="mt-4 text-sm font-bold">- Ngọc Anh</div>
                     </div>
                     <div className="p-6 bg-white/80 text-black rounded-lg shadow-md max-w-xs">
                         <p className="text-lg font-medium">
-                        "Nội thất ở đây rất đẹp và hiện đại, tôi cảm thấy tự tin hơn khi nói về chúng."
+                        &quot;Nội thất ở đây rất đẹp và hiện đại, tôi cảm thấy tự tin hơn khi nói về chúng.&quot;
                         </p>
                         <div className="mt-4 text-sm font-bold">- Minh Tuấn</div>
                     </div>
                     <div className="p-6 bg-white/80 text-black rounded-lg shadow-md max-w-xs">
                         <p className="text-lg font-medium">
-                        "Tôi rất thích các sản phẩm ở cửa hàng. Nó khiến ngôi nhà của tôi trở nên sang trọng."
+                        &quot;Tôi rất thích các sản phẩm ở cửa hàng. Nó khiến ngôi nhà của tôi trở nên sang trọng.&quot;
                         </p>
                         <div className="mt-4 text-sm font-bold">- Thu Hiền</div>
                     </div>

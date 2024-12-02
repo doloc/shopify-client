@@ -1,6 +1,6 @@
 'use client'
 import React, { useState, useEffect } from "react";
-import { FiTrash2, FiX, FiCopy } from "react-icons/fi";
+import { FiTrash2, FiX } from "react-icons/fi";
 
 const Checkout = () => {
     const [language, setLanguage] = useState<keyof typeof cartTranslations>("en");
@@ -15,14 +15,6 @@ const Checkout = () => {
         phoneNumber: ""
       });
     const [paymentMethod, setPaymentMethod] = useState("cod");
-    const [cardDetails, setCardDetails] = useState({
-        cardNumber: "",
-        expiryDate: "",
-        cvv: ""
-    });
-    const [shippingMethod, setShippingMethod] = useState("standard");
-    const [sendOrderConfirmation, setSendOrderConfirmation] = useState(true);
-    const [formErrors, setFormErrors] = useState<{ [key: string]: string }>({});
 
     // Sample cart data
     const sampleProducts = [

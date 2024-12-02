@@ -1,7 +1,6 @@
 'use client'
 import { useState } from "react";
-import { FiUpload, FiX } from "react-icons/fi";
-// @ts-ignore
+import { FiUpload } from "react-icons/fi";
 // import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 // import ReactQuill from "react-quill";
 // import "react-quill/dist/quill.snow.css";

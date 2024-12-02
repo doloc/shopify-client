@@ -3,7 +3,7 @@ import { useState } from "react";
 import { FiEdit2, FiPlusCircle, FiTrash2 } from "react-icons/fi";
 
 const Navigation = () => {
-    const [language, setLanguage] = useState<keyof typeof translations>("en");
+  const [language] = useState<keyof typeof translations>("en");
     const [isNavigatorModalOpen, setIsNavigatorModalOpen] = useState(false);
     const [editNavigator, setEditNavigator] = useState<any>(null);
     const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
